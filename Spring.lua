@@ -2,7 +2,6 @@ local Spring = {} do
 	Spring.__index = Spring
 
 	local pi = math.pi
-	local abs = math.abs
 	local exp = math.exp
 	local sin = math.sin
 	local cos = math.cos
