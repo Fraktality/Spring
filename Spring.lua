@@ -104,8 +104,8 @@ local Spring = {} do
 		else -- Overdamped
 			local c = sqrt(d*d - 1)
 
-			local r1 = -f*(d - c)
-			local r2 = -f*(d + c)
+			local r1 = -f*(d + c)
+			local r2 = -f*(d - c)
 
 			local co2 = (v0 - offset*r1)/(2*f*c)
 			local co1 = offset - co2
