@@ -1,6 +1,5 @@
 -- Spring solver
---
--- Copyright 2018 Parker Stebbins (parker@fractality.io)
+-- Copyright 2023 Fractality
 -- github.com/Fraktality/Spring
 -- Distributed under the MIT license; see full notice at the end of this file.
 
@@ -124,7 +123,7 @@ local Spring = {} do
 	end
 end
 
--- Copyright 2018 Parker Stebbins
+-- Copyright 2023 Fractality
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 -- documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
