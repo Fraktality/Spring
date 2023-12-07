@@ -14,7 +14,7 @@ local Spring = {} do
 
 	local EPS = 1e-4
 
-	function Spring.new(dampingRatio, frequency, position)
+	function Spring.new(dampingRatio: number, frequency: number, position)
 		assert(type(dampingRatio) == "number")
 		assert(type(frequency) == "number")
 		assert(dampingRatio*frequency >= 0, "Spring does not converge")
@@ -28,19 +28,19 @@ local Spring = {} do
 		}, Spring)
 	end
 
-	function Spring:SetGoal(newGoal)
+	function Spring:setGoal(newGoal)
 		self.g = newGoal
 	end
 
-	function Spring:GetPosition()
+	function Spring:getPosition()
 		return self.p
 	end
 
-	function Spring:GetVelocity()
+	function Spring:getVelocity()
 		return self.v
 	end
 
-	function Spring:Update(dt)
+	function Spring:step(dt: number)
 		local d = self.d
 		local f = self.f*2*pi
 		local g = self.g
