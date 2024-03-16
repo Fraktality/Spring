@@ -15,8 +15,8 @@ local Spring = {} do
 	local EPS = 1e-4
 
 	function Spring.new(dampingRatio: number, frequency: number, position)
-		assert(type(dampingRatio) == "number")
-		assert(type(frequency) == "number")
+		assert(type(dampingRatio) == "number", "Damping ratio must be a number")
+		assert(type(frequency) == "number", "Frequency must be a number")
 		assert(dampingRatio*frequency >= 0, "Spring does not converge")
 
 		return setmetatable({
